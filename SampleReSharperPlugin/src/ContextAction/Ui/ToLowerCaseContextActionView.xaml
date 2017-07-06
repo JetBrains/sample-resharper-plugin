@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="SampleReSharperPlugin.ToLowerCaseContextActionView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <ResourceDictionary Source="../../Styles.xaml" />
+    </UserControl.Resources>
+
+    <Grid>
+        <StackPanel>
+            <TextBlock Style="{StaticResource TipStyle}" TextWrapping="Wrap">
+                This example demonstrates how to create a simple context action.<LineBreak />
+                To test the example, open any solution (e.g., a test solution provided with the plugin) in Visual Studio.
+                Then place the caret over a variable declaration that has capital letters. Once you press
+                <Bold>Alt+Enter</Bold>, you will see the <Bold>Convert to lowercase</Bold> action in the list.
+                <LineBreak /> See the code in
+                <Italic>
+                    src/ContextAction
+                </Italic>
+                .
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="SampleReSharperPlugin.SignalsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModels="clr-namespace:SampleReSharperPlugin"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300"
+             d:DataContext="{d:DesignInstance Type={x:Type viewModels:SignalsViewModel}, IsDesignTimeCreatable=False}">
+
+    <UserControl.Resources>
+        <ResourceDictionary Source="../../Styles.xaml" />
+    </UserControl.Resources>
+
+    <Grid>
+        <StackPanel>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap"
+                       VerticalAlignment="Top" Margin="10,10,5,0">
+                Turn the checkbox below on or off to fire a signal with the corresponding bool value:
+            </TextBlock>
+            <CheckBox HorizontalAlignment="Left"
+                      VerticalAlignment="Top" Margin="10,10,5,0" x:Name="CheckBox" IsChecked="{Binding IsChecked.Value}">
+                Some option
+            </CheckBox>
+            <TextBlock Style="{StaticResource TipStyle}" TextWrapping="Wrap">
+                This example demonstrates how to work with signals.
+                See the code in <Italic>src/Signals</Italic>.
+            </TextBlock>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

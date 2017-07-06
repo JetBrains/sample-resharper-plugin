@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="SampleReSharperPlugin.SolutionComponentView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <ResourceDictionary Source="../../Styles.xaml" />
+    </UserControl.Resources>
+
+    <Grid>
+        <StackPanel>
+            <TextBlock Style="{StaticResource TipStyle}" TextWrapping="Wrap">
+                <Run Text="This example demonstrates how to:" /><LineBreak />
+                <Run Text="■ Create a simple solution component. &#xD;&#xA;■ Track solution loading status. " />
+                <LineBreak />
+                <Run
+                    Text="To test the example, simply open any solution in Visual Studio. The solution component will show a message box with the solution name after the solution is fully loaded. See the code in " />
+                <Italic>
+                    src/SolutionComponent
+                </Italic>
+                and in
+                <Italic>
+                    src/SolutionStateTracker
+                </Italic>
+                .
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</UserControl>

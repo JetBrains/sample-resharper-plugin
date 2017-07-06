@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="SampleReSharperPlugin.PropertyView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModels="clr-namespace:SampleReSharperPlugin"
+             mc:Ignorable="d"
+             d:DesignHeight="600" d:DesignWidth="300"
+             d:DataContext="{d:DesignInstance Type={x:Type viewModels:PropertyViewModel}, IsDesignTimeCreatable=False}">
+
+    <UserControl.Resources>
+        <ResourceDictionary Source="../../Styles.xaml" />
+    </UserControl.Resources>
+
+    <Grid>
+        <StackPanel>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap"
+                       VerticalAlignment="Top" Margin="10,10,5,0">
+                Changing the value in the textbox changes the global IProperty SomeIntProperty:
+            </TextBlock>
+            <TextBox x:Name="textBox" Height="23" TextWrapping="Wrap" 
+                     Text="{Binding SomeIntProperty.Value, UpdateSourceTrigger=PropertyChanged}" 
+                     VerticalAlignment="Top" Margin="10,10,10,0" />
+            <TextBlock Style="{StaticResource TipStyle}" TextWrapping="Wrap">
+                This example demonstrates simple IProperty usage. See the code in
+                <Italic>src/IProperty/PropertyProvider.cs</Italic>
+                and <Italic>PropertyTester.cs</Italic>.
+            </TextBlock>
+            <Separator Height="5" Margin="0" />
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,10,5,0">
+                The string you enter in the textbox below is processed using Property.FlowChangesInto (Title Capitalization Is Applied):
+            </TextBlock>
+            <TextBox Height="23" TextWrapping="Wrap"
+                     Text="{Binding SourceProperty.Value, UpdateSourceTrigger=PropertyChanged}"
+                     VerticalAlignment="Top" Margin="10,10,10,0" />
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap"
+                       VerticalAlignment="Top" Margin="10,10,5,0">
+                The resulting string:
+            </TextBlock>
+            <TextBox Height="23" TextWrapping="Wrap"
+                     Text="{Binding TargetProperty.Value, UpdateSourceTrigger=PropertyChanged}"
+                     VerticalAlignment="Top" Margin="10,10,10,0"
+                     IsReadOnly="True" />
+            <TextBlock Style="{StaticResource TipStyle}" TextWrapping="Wrap">
+                This example demonstrates how to use data flow between two IProperties. The first one accepts a string and
+                passes it to the second IProperty that processes the string (applies capitalization).
+                See the code in
+                <Italic>src/IProperty/PropertyFlow.cs</Italic>.
+            </TextBlock>
+        </StackPanel>
+
+    </Grid>
+</UserControl>
