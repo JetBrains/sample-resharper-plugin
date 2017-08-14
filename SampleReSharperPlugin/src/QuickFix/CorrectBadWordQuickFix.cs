@@ -29,7 +29,7 @@ namespace SampleReSharperPlugin
                 var newText = Regex.Replace(_variableDeclaration.DeclaredName, "crap", "BadWord", RegexOptions.IgnoreCase);
                 
                 RenameRefactoringService.Rename(solution,
-                    new RenameDataProvider((IDeclaredElement) _variableDeclaration, newText), textControl);
+                    new RenameDataProvider(_variableDeclaration.DeclaredElement, newText), textControl);
             };
         }
 
