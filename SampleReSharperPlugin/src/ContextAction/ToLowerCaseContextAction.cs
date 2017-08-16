@@ -29,7 +29,7 @@ namespace SampleReSharperPlugin
             {
                 var newText = _nodeUnderCaret.DeclaredName.ToLower();
                 RenameRefactoringService.Rename(solution,
-                    new RenameDataProvider((IDeclaredElement) _nodeUnderCaret, newText), textControl);
+                    new RenameDataProvider(_nodeUnderCaret.DeclaredElement, newText), textControl);
             };
         }
 
