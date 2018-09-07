@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Input;
+using JetBrains.Application.UI.UIAutomation;
 using JetBrains.DataFlow;
 using JetBrains.ProjectModel;
-using JetBrains.UI.Wpf;
 
 namespace SampleReSharperPlugin
 {

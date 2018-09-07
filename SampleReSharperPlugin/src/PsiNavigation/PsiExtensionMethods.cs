@@ -1,20 +1,15 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using JetBrains.Annotations;
-using JetBrains.Application;
+using JetBrains.Application.Threading;
 using JetBrains.ProjectModel;
-using JetBrains.ProjectModel.Model2.Assemblies.Interfaces;
 using JetBrains.ReSharper.Feature.Services.Navigation.NavigationExtensions;
 using JetBrains.ReSharper.Psi;
-using JetBrains.ReSharper.Psi.Css.Tree;
 using JetBrains.ReSharper.Psi.CSharp;
 using JetBrains.ReSharper.Psi.CSharp.Tree;
 using JetBrains.ReSharper.Psi.Files;
-using JetBrains.ReSharper.Psi.Modules;
 using JetBrains.ReSharper.Psi.Paths;
-using JetBrains.ReSharper.Psi.Resx.ResourceDefaultLanguage;
 using JetBrains.ReSharper.Psi.Tree;
 using JetBrains.Util;
 

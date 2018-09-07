@@ -1,5 +1,5 @@
-﻿using JetBrains.DataFlow;
-using JetBrains.UI.Wpf;
+﻿using JetBrains.Application.UI.UIAutomation;
+using JetBrains.DataFlow;
 
 namespace SampleReSharperPlugin
 {

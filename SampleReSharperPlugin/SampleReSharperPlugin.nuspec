@@ -2,13 +2,13 @@
 <package>
 	<metadata>
         	<id>MyCompany.SampleReSharperPlugin</id>
-                <version>0.0.6</version>
+                <version>0.0.7</version>
                 <authors>Me</authors>
                 <owners>Me</owners>
                 <requireLicenseAcceptance>false</requireLicenseAcceptance>
                 <description>ReSharper plugin used for ReSharper SDK demonstration purposes</description>               	
                 <dependencies>
-                	<dependency id="Wave" version="[8.0]" />
+                	<dependency id="Wave" version="12.0" />
                 </dependencies>
 	</metadata>
         <files>

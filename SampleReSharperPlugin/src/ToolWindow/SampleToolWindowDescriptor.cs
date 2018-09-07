@@ -1,13 +1,13 @@
 ﻿using JetBrains.Application;
-using JetBrains.UI.ToolWindowManagement;
+using JetBrains.Application.UI.ToolWindowManagement;
 
 namespace SampleReSharperPlugin
 {    
     [ToolWindowDescriptor(
             ProductNeutralId = "MyToolWindow",
             Text = "Sample Tool Window",
-            Icon = typeof(JetBrains.Ide.Resources.IdeThemedIcons.TextDocument),
             Type = ToolWindowType.MultiInstance,
+            Icon = typeof(JetBrains.UI.Resources.ExtensionManagerThemedIcons.ExtensionInstall),
             VisibilityPersistenceScope = ToolWindowVisibilityPersistenceScope.Global,
             InitialDocking = ToolWindowInitialDocking.Right
         )

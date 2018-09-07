@@ -1,6 +1,6 @@
-﻿using JetBrains.ActionManagement;
-using JetBrains.Application.DataContext;
-using JetBrains.UI.ActionsRevised;
+﻿using JetBrains.Application.DataContext;
+using JetBrains.Application.UI.Actions;
+using JetBrains.Application.UI.ActionsRevised.Menu;
 
 namespace SampleReSharperPlugin
 {

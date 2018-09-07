@@ -1,4 +1,5 @@
-﻿using JetBrains.UI.Wpf;
+﻿using JetBrains.Application.UI.Automation;
+using JetBrains.UI.Wpf;
 
 namespace SampleReSharperPlugin
 {

@@ -1,13 +1,12 @@
-﻿using JetBrains.ActionManagement;
-using JetBrains.Application;
-using JetBrains.Application.DataContext;
-using JetBrains.Application.Settings.Store.Implementation;
+﻿using JetBrains.Application.DataContext;
+using JetBrains.Application.Settings.Implementation;
+using JetBrains.Application.UI.Actions;
+using JetBrains.Application.UI.Actions.MenuGroups;
+using JetBrains.Application.UI.ActionsRevised.Menu;
+using JetBrains.Application.UI.ActionSystem.ActionsRevised.Menu;
+using JetBrains.Application.UI.Components.Theming;
+using JetBrains.Application.UI.ToolWindowManagement;
 using JetBrains.DataFlow;
-using JetBrains.UI.ActionsRevised;
-using JetBrains.UI.Application;
-using JetBrains.UI.Components.Theming;
-using JetBrains.UI.MenuGroups;
-using JetBrains.UI.ToolWindowManagement;
 
 namespace SampleReSharperPlugin
 {

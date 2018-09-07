@@ -1,4 +1,5 @@
 ﻿using System.Windows.Input;
+using JetBrains.Application.UI.UIAutomation;
 using JetBrains.DataFlow;
 using JetBrains.UI.Wpf;
 

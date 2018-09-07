@@ -1,6 +1,6 @@
 ﻿using JetBrains.Application.Settings;
+using JetBrains.Application.UI.UIAutomation;
 using JetBrains.DataFlow;
-using JetBrains.UI.Wpf;
 
 namespace SampleReSharperPlugin
 {

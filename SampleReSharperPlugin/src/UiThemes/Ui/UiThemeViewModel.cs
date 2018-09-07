@@ -1,7 +1,7 @@
 ﻿using System.Windows.Media;
+using JetBrains.Application.UI.Components.Theming;
+using JetBrains.Application.UI.UIAutomation;
 using JetBrains.DataFlow;
-using JetBrains.UI.Components.Theming;
-using JetBrains.UI.Wpf;
 
 namespace SampleReSharperPlugin
 {

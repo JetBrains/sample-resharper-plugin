@@ -1,6 +1,5 @@
-﻿using JetBrains.Application;
+﻿using JetBrains.Application.Threading;
 using JetBrains.DataFlow;
-using JetBrains.Threading;
 
 namespace SampleReSharperPlugin
 {

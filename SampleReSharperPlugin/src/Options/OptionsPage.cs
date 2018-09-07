@@ -1,10 +1,11 @@
 ﻿using JetBrains.Annotations;
 using JetBrains.Application.Settings;
+using JetBrains.Application.Settings.WellKnownRootKeys;
+using JetBrains.Application.UI.Options;
+using JetBrains.Application.UI.Options.OptionPages;
+using JetBrains.Application.UI.Options.OptionsDialog;
 using JetBrains.DataFlow;
 using JetBrains.ReSharper.Feature.Services.Resources;
-using JetBrains.UI.Options;
-using JetBrains.UI.Options.OptionPages.ToolsPages;
-using JetBrains.UI.Options.OptionsDialog2.SimpleOptions;
 
 namespace SampleReSharperPlugin
 {

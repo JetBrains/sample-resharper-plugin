@@ -1,12 +1,12 @@
 using System;
 using System.Windows.Input;
-using JetBrains.ActionManagement;
 using JetBrains.Annotations;
-using JetBrains.Application;
+using JetBrains.Application.Threading;
+using JetBrains.Application.UI.Actions.ActionManager;
+using JetBrains.Application.UI.ActionsRevised.Menu;
 using JetBrains.DataFlow;
 using JetBrains.ReSharper.Resources.Shell;
-using JetBrains.Threading;
-using JetBrains.UI.ActionsRevised;
+
 
 namespace SampleReSharperPlugin
 {

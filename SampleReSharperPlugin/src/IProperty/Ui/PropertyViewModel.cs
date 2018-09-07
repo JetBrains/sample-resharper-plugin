@@ -1,4 +1,5 @@
-﻿using JetBrains.DataFlow;
+﻿using JetBrains.Application.UI.UIAutomation;
+using JetBrains.DataFlow;
 using JetBrains.ReSharper.Resources.Shell;
 using JetBrains.UI.Wpf;
 

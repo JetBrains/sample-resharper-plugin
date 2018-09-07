@@ -1,19 +1,10 @@
 ﻿using System;
 using System.Windows.Controls;
-using JetBrains.ActionManagement;
-using JetBrains.Application;
 using JetBrains.Application.Settings;
+using JetBrains.Application.UI.Components.Theming;
+using JetBrains.Application.UI.ToolWindowManagement;
+using JetBrains.Application.UI.UIAutomation;
 using JetBrains.DataFlow;
-using JetBrains.DocumentManagers;
-using JetBrains.ReSharper.Resources.Shell;
-using JetBrains.TextControl;
-using JetBrains.Threading;
-using JetBrains.UI.Application;
-using JetBrains.UI.Components.Theming;
-using JetBrains.UI.Controls;
-using JetBrains.UI.CrossFramework;
-using JetBrains.UI.ToolWindowManagement;
-using JetBrains.Util;
 
 namespace SampleReSharperPlugin
 {
